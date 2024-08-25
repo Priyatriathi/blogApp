@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-image: url('background.jpeg'); background-repeat: no-repeat; background-size: cover; display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div style="background-color: white; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+        <h1 style="text-align: center; color: #333;">Register</h1>
+        <form action="/auth/register" method="POST" style="display: flex; flex-direction: column;">
+            <label for="name" style="margin-bottom: 5px; color: #333;">Name:</label>
+            <input type="text" id="name" name="name" required style="padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 3px;">
+
+            <label for="email" style="margin-bottom: 5px; color: #333;">Email:</label>
+            <input type="email" id="email" name="email" required style="padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 3px;">
+
+            <label for="password" style="margin-bottom: 5px; color: #333;">Password:</label>
+            <input type="password" id="password" name="password" required style="padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 3px;">
+
+            <button type="submit" style="padding: 10px 15px; background-color: #333; color: white; border: none; border-radius: 3px; cursor: pointer;">Register</button>
+        </form>
+    </div>
+</body>
+</html>
